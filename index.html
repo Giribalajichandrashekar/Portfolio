@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giri Balaji C — Developer Portfolio</title>
+  <meta name="description"
+    content="Giri Balaji C — BCA Student & Software Developer from Bengaluru. Skilled in Python, JavaScript, SQL, and modern web technologies." />
+  <meta property="og:title" content="Giri Balaji C — Developer Portfolio" />
+  <meta property="og:description" content="BCA Student & Software Developer from Bengaluru, India." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>GBC<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" id="nav-certs">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="mailto:giribalajichandrashekar@gmail.com" class="nav-cta" id="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name" id="hero-name">
+        <span class="name-line">Giri Balaji</span> <span class="name-line accent">C</span>
+      </h1>
+      <div class="hero-typing-wrapper">
+        <span class="typing-prefix">I build</span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-desc" id="hero-desc">
+        BCA Student @ Dayananda Sagar University · Bengaluru, India<br />
+        Passionate about crafting web experiences and building products that matter.
+      </p>
+      <div class="hero-actions" id="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="btn-projects">View Projects</a>
+        <a href="https://github.com/Giribalajichandrashekar" target="_blank" class="btn btn-outline" id="btn-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">7+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">2023</span>
+          <span class="stat-label">Active Since</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" id="hero-visual">
+      <div class="photo-container">
+        <div class="photo-ring ring-1"></div>
+        <div class="photo-ring ring-2"></div>
+        <div class="photo-ring ring-3"></div>
+        <div class="photo-glow"></div>
+        <img src="https://github.com/Giribalajichandrashekar.png" alt="Giri Balaji C" class="profile-photo"
+          id="profilePhoto"
+          onerror="this.src='https://ui-avatars.com/api/?name=Giri+Balaji+C&background=7c3aed&color=fff&size=400'" />
+        <div class="photo-badge-floating code-badge">
+          <span class="mono">&lt;/&gt; dev</span>
+        </div>
+        <div class="photo-badge-floating loc-badge">
+          <span>📍 Bengaluru</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">01 / Who Am I</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-animate>
+          <p class="about-lead">
+            I'm a motivated <strong>BCA student at Dayananda Sagar University</strong> with hands‑on experience in web
+            development and software projects.
+          </p>
+          <p class="about-body">
+            Skilled in Python, JavaScript, SQL, Git, and modern web technologies. I'm passionate about building
+            practical applications, exploring new technologies, and contributing to real‑world software development
+            teams.
+          </p>
+          <p class="about-body">
+            Currently on a mission to master <strong>React</strong>, <strong>Data Structures & Algorithms</strong>,
+            <strong>Chrome Extensions</strong>, and <strong>SaaS Development</strong>. My goal? <em>Build products that
+              millions love 🚀</em>
+          </p>
+          <div class="about-missions">
+            <div class="mission-bar">
+              <span class="mission-label">React</span>
+              <div class="mission-track">
+                <div class="mission-fill" style="width:60%"></div>
+              </div>
+              <span class="mission-pct">60%</span>
+            </div>
+            <div class="mission-bar">
+              <span class="mission-label">DSA</span>
+              <div class="mission-track">
+                <div class="mission-fill" style="width:45%"></div>
+              </div>
+              <span class="mission-pct">45%</span>
+            </div>
+            <div class="mission-bar">
+              <span class="mission-label">Chrome Extensions</span>
+              <div class="mission-track">
+                <div class="mission-fill" style="width:35%"></div>
+              </div>
+              <span class="mission-pct">35%</span>
+            </div>
+            <div class="mission-bar">
+              <span class="mission-label">SaaS Dev</span>
+              <div class="mission-track">
+                <div class="mission-fill" style="width:25%"></div>
+              </div>
+              <span class="mission-pct">25%</span>
+            </div>
+          </div>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/giri-balaji-c-054b5341a" target="_blank" class="social-link"
+              id="link-linkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Giribalajichandrashekar" target="_blank" class="social-link"
+              id="link-github-about">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-card-grid" data-animate>
+          <div class="info-card" id="card-edu">
+            <div class="info-card-icon">🎓</div>
+            <h3>Education</h3>
+            <p><strong>BCA</strong></p>
+            <p>Dayananda Sagar University</p>
+            <span class="info-tag">Expected 2028</span>
+          </div>
+          <div class="info-card" id="card-loc">
+            <div class="info-card-icon">📍</div>
+            <h3>Location</h3>
+            <p>Bengaluru</p>
+            <p>Karnataka, India</p>
+            <span class="info-tag">UTC +5:30</span>
+          </div>
+          <div class="info-card" id="card-focus">
+            <div class="info-card-icon">🎯</div>
+            <h3>Focus</h3>
+            <p>Web Development</p>
+            <p>SaaS & Open Source</p>
+            <span class="info-tag">Full Stack</span>
+          </div>
+          <div class="info-card" id="card-deploy">
+            <div class="info-card-icon">🚀</div>
+            <h3>Deployment</h3>
+            <p>Apps Live on</p>
+            <p><strong>Vercel</strong></p>
+            <span class="info-tag">Production Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">02 / What I Know</span>
+        <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-grid" data-animate>
+        <div class="skill-category" id="skill-languages">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">💻</span> Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">Python</span>
+            <span class="skill-tag tier-1">JavaScript</span>
+            <span class="skill-tag tier-1">SQL</span>
+            <span class="skill-tag tier-2">C</span>
+            <span class="skill-tag tier-2">HTML5</span>
+            <span class="skill-tag tier-2">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-web">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🌐</span> Web Development
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">HTML5</span>
+            <span class="skill-tag tier-1">CSS3</span>
+            <span class="skill-tag tier-1">Bootstrap</span>
+            <span class="skill-tag tier-2">Responsive Design</span>
+            <span class="skill-tag tier-2">React</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-db">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🗄️</span> Databases
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">MySQL</span>
+            <span class="skill-tag tier-1">MongoDB</span>
+            <span class="skill-tag tier-2">SQLite</span>
+            <span class="skill-tag tier-2">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-tools">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🛠️</span> Tools & Deployment
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">Git</span>
+            <span class="skill-tag tier-1">GitHub</span>
+            <span class="skill-tag tier-1">Vercel</span>
+            <span class="skill-tag tier-2">VS Code</span>
+            <span class="skill-tag tier-2">Linux</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-soft">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🤝</span> Soft Skills
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-soft">Communication</span>
+            <span class="skill-tag tier-soft">Problem Solving</span>
+            <span class="skill-tag tier-soft">Team Collaboration</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-learning">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">📚</span> Currently Learning
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-learning">React</span>
+            <span class="skill-tag tier-learning">DSA</span>
+            <span class="skill-tag tier-learning">Chrome Extensions</span>
+            <span class="skill-tag tier-learning">SaaS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">03 / What I've Built</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Assignment Tracker -->
+        <div class="project-card featured" data-animate id="proj-assignment">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">📋</div>
+              <div class="project-links-row">
+                <a href="https://assignment-tracker-rho-wheat.vercel.app" target="_blank" class="proj-link"
+                  id="proj-link-at-live" title="Live Demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+                <a href="https://github.com/Giribalajichandrashekar/Assignment-Tracker-" target="_blank"
+                  class="proj-link" id="proj-link-at-gh" title="Source Code">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <span class="project-live-badge">🟢 Live</span>
+            <h3 class="project-title">Assignment Tracker System</h3>
+            <p class="project-desc">A web-based assignment management platform for organizing academic tasks and
+              deadlines. Features task tracking, progress monitoring, and a fully responsive UI.</p>
+            <div class="project-tech-row">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Style Galaxy -->
+        <div class="project-card featured" data-animate id="proj-style">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">👗</div>
+              <div class="project-links-row">
+                <a href="https://style-galaxy.vercel.app" target="_blank" class="proj-link" id="proj-link-sg-live"
+                  title="Live Demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+                <a href="https://github.com/Giribalajichandrashekar" target="_blank" class="proj-link"
+                  id="proj-link-sg-gh" title="Source Code">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <span class="project-live-badge">🟢 Live</span>
+            <h3 class="project-title">Style Galaxy — Fashion Website</h3>
+            <p class="project-desc">A fashion-focused responsive website with modern UI/UX principles. Features product
+              showcase layouts, mobile-friendly navigation, and elegant design.</p>
+            <div class="project-tech-row">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Bootstrap</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MP3 Player -->
+        <div class="project-card" data-animate id="proj-mp3">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">🎵</div>
+              <div class="project-links-row">
+                <a href="https://github.com/Giribalajichandrashekar/MP3-Player-" target="_blank" class="proj-link"
+                  id="proj-link-mp3-gh" title="Source Code">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">MP3 Player</h3>
+            <p class="project-desc">A browser-based MP3 music player with playback controls, playlist management, and a
+              clean audio interface — built entirely with vanilla JavaScript.</p>
+            <div class="project-tech-row">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Tab Manager -->
+        <div class="project-card" data-animate id="proj-tab">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">🔖</div>
+              <div class="project-links-row">
+                <a href="https://github.com/Giribalajichandrashekar/Smart-tab-manager-extension" target="_blank"
+                  class="proj-link" id="proj-link-tab-gh" title="Source Code">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Smart Tab Manager Extension</h3>
+            <p class="project-desc">A Chrome extension for smart browser tab management — organize, search, and group
+              tabs efficiently to boost your productivity while browsing.</p>
+            <div class="project-tech-row">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Chrome API</span>
+              <span class="tech-pill">Extension</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Management System -->
+        <div class="project-card" data-animate id="proj-student">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">🎓</div>
+              <div class="project-links-row">
+                <a href="https://github.com/Giribalajichandrashekar/Student-Management-System-" target="_blank"
+                  class="proj-link" id="proj-link-sms-gh" title="Source Code">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Student Management System</h3>
+            <p class="project-desc">A Python-based web application for managing student data. Features CRUD operations,
+              a user-friendly interface, and persistent data storage.</p>
+            <div class="project-tech-row">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">HTML5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator -->
+        <div class="project-card" data-animate id="proj-calc">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">🧮</div>
+              <div class="project-links-row">
+                <a href="https://github.com/Giribalajichandrashekar/Calculator-using-C" target="_blank"
+                  class="proj-link" id="proj-link-calc-gh" title="Source Code">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Calculator using C</h3>
+            <p class="project-desc">A terminal-based calculator built in C implementing arithmetic operations,
+              demonstrating strong understanding of low-level programming and memory management.</p>
+            <div class="project-tech-row">
+              <span class="tech-pill">C</span>
+              <span class="tech-pill">Terminal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta" data-animate>
+        <a href="https://github.com/Giribalajichandrashekar?tab=repositories" target="_blank" class="btn btn-outline"
+          id="btn-all-repos">
+          View All Repositories →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">04 / Credentials</span>
+        <h2 class="section-title">Certi<span class="accent">fications</span></h2>
+      </div>
+      <div class="certs-grid" data-animate>
+        <div class="cert-card" id="cert-infosys">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">🏅</div>
+          <div class="cert-body">
+            <h3>Frontend Web Developer</h3>
+            <p class="cert-issuer">Infosys Springboard</p>
+            <p class="cert-desc">Certified in HTML, CSS, JavaScript, and responsive web design fundamentals.</p>
+          </div>
+        </div>
+        <div class="cert-card" id="cert-comm">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">🗣️</div>
+          <div class="cert-body">
+            <h3>Communication Skills</h3>
+            <p class="cert-issuer">Dayananda Sagar University</p>
+            <p class="cert-desc">Professional communication training for effective team and client collaboration.</p>
+          </div>
+        </div>
+        <div class="cert-card" id="cert-cscu">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">🔐</div>
+          <div class="cert-body">
+            <h3>CSCU Certification</h3>
+            <p class="cert-issuer">EC-Council</p>
+            <p class="cert-desc">Certified Secure Computer User — cybersecurity fundamentals and best practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">05 / Get In Touch</span>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+      </div>
+      <div class="contact-wrapper" data-animate>
+        <div class="contact-text">
+          <p>I'm currently open to internship opportunities, collaborations, and exciting projects. Whether you have a
+            question or just want to say hi — my inbox is always open!</p>
+        </div>
+        <div class="contact-cards">
+          <a href="mailto:giribalajichandrashekar@gmail.com" class="contact-card" id="contact-email">
+            <div class="contact-card-icon">✉️</div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">giribalajichandrashekar@gmail.com</span>
+            </div>
+            <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/giri-balaji-c-054b5341a" target="_blank" class="contact-card"
+            id="contact-linkedin">
+            <div class="contact-card-icon">💼</div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">in/giri-balaji-c-054b5341a</span>
+            </div>
+            <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://github.com/Giribalajichandrashekar" target="_blank" class="contact-card" id="contact-github">
+            <div class="contact-card-icon">🐙</div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">Giribalajichandrashekar</span>
+            </div>
+            <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="tel:+916364816118" class="contact-card" id="contact-phone">
+            <div class="contact-card-icon">📱</div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value">+91 6364816118</span>
+            </div>
+            <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>GBC<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">
+        Designed &amp; Built by <strong>Giri Balaji C</strong> · Bengaluru, India
+      </p>
+      <p class="footer-sub">
+        Deployed on <a href="https://vercel.com" target="_blank">Vercel</a> · &copy; 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
