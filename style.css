@@ -45,6 +45,45 @@ body {
   position: relative;
 }
 
+/* Ambient Viewport Glow (Left & Right Sides) */
+.side-glow {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2;
+  /* Sits above section backgrounds (z-index 1) but below container contents (z-index 3) */
+  opacity: 0.25;
+  filter: blur(140px);
+  animation: pulse-glow 8s ease-in-out infinite alternate;
+}
+
+.glow-left {
+  top: 15%;
+  left: -300px;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+}
+
+.glow-right {
+  bottom: 15%;
+  right: -300px;
+  background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
+  animation-delay: -4s;
+}
+
+@keyframes pulse-glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0.35;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -146,6 +185,8 @@ body.hovering .cursor-trail {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 3;
 }
 
 .accent {
@@ -221,6 +262,8 @@ body.hovering .cursor-trail {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  position: relative;
+  z-index: 3;
 }
 
 .nav-logo {
@@ -360,6 +403,8 @@ body.hovering .cursor-trail {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  z-index: 3;
 }
 
 .hero-badge {
@@ -500,6 +545,8 @@ body.hovering .cursor-trail {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 3;
 }
 
 .photo-container {
@@ -1207,6 +1254,8 @@ body.hovering .cursor-trail {
   align-items: center;
   text-align: center;
   gap: 1.5rem;
+  position: relative;
+  z-index: 3;
 }
 
 .footer-logo {
