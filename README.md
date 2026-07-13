@@ -34,3 +34,7 @@ A premium, highly interactive **Developer Portfolio** built with a dark space-ne
 *   **Instagram**: [@call_me_yash_67](https://www.instagram.com/call_me_yash_67/)
 *   **Email**: giribalajichandrashekar@gmail.com
 *   **Phone**: +91 6364816118
+
+## Licence 
+
+Licenced under MIT Licence
