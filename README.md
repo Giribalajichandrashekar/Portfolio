@@ -38,5 +38,3 @@ A premium, highly interactive **Developer Portfolio** built with a dark space-ne
 ## Licence 
 
 Licenced under MIT Licence
-
-ntg
