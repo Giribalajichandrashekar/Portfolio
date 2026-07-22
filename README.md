@@ -24,6 +24,7 @@ A premium, highly interactive **Developer Portfolio** built with a dark space-ne
 *   **HTML5** — Semantic markup, metadata indexing, SEO configuration
 *   **CSS3** — Custom tokens, keyframe animations, responsive grid frameworks
 *   **JavaScript** — Intersection Observer API, Canvas rendering, coordinate trackers
+*   **Fontawosme icons & Bootstrap icons** — Solid icons, SVGs, CDN
 
 ---
 
@@ -35,8 +36,3 @@ A premium, highly interactive **Developer Portfolio** built with a dark space-ne
 *   **Email**: giribalajichandrashekar@gmail.com
 *   **Phone**: +91 6364816118
 
-## Licence 
-
-Licenced under MIT Licence
-
-asd
