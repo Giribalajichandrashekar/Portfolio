@@ -2,7 +2,7 @@
 
 ![Vercel Deployment](https://img.shields.io/badge/Deployed%20with-Vercel-black.svg?logo=vercel)
 [![GitHub stars](https://img.shields.io/github/stars/Giribalajichandrashekar/MP3-Player-?style=flat-square)](https://github.com/Giribalajichandrashekar)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/Apache)
 
 A premium, highly interactive **Developer Portfolio** built with a dark space-neon aesthetic, smooth graphics rendering, and subtle micro-interactions.
 
