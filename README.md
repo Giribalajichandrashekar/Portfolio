@@ -1,4 +1,6 @@
-# 🌌 Giri Balaji C — Developer Portfolio
+_![image not found](./media/images/giribalajitextimg.jpg)
+
+# Giri Balaji C — Developer Portfolio
 
 ![Vercel Deployment](https://img.shields.io/badge/Deployed%20with-Vercel-black.svg?logo=vercel)
 [![GitHub stars](https://img.shields.io/github/stars/Giribalajichandrashekar/MP3-Player-?style=flat-square)](https://github.com/Giribalajichandrashekar)
@@ -8,18 +10,18 @@ A premium, highly interactive **Developer Portfolio** built with a dark space-ne
 
 ---
 
-## 🚀 Key Features & Highlights
+## Key Features & Highlights
 
-*   **🌌 Dynamic Canvas Particles**: Live HTML5 canvas-based particle rendering that handles fluid coordinate updates in the background.
-*   **🎯 Physics-Based Custom Cursor**: Responsive pointer tracking with automated scale morphing when hovering interactive items (buttons, links, grids).
-*   **✍️ Terminal-Style Typing Carousel**: Animated typing rotator cycling through core developmental targets: *React Applications, Python Systems, Chrome Extensions, and SaaS Products*.
-*   **✨ Spotlight Glow Gradients**: Cards calculate mouse coordinates dynamically to cast localized radial gradient spotlights on hover.
-*   **📱 Fully Responsive**: Seamless media queries accommodating displays from ultra-wide monitors to mobile devices.
-*   **🎨 Premium Theme**: Curated space-dark color palette utilizing glowing indigo, violet, and cyan accent systems.
+*   **Dynamic Canvas Particles**: Live HTML5 canvas-based particle rendering that handles fluid coordinate updates in the background.
+*   **Physics-Based Custom Cursor**: Responsive pointer tracking with automated scale morphing when hovering interactive items (buttons, links, grids).
+*   **Terminal-Style Typing Carousel**: Animated typing rotator cycling through core developmental targets: *React Applications, Python Systems, Chrome Extensions, and SaaS Products*.
+*   **Spotlight Glow Gradients**: Cards calculate mouse coordinates dynamically to cast localized radial gradient spotlights on hover.
+*   **Fully Responsive**: Seamless media queries accommodating displays from ultra-wide monitors to mobile devices.
+*   **Premium Theme**: Curated space-dark color palette utilizing glowing indigo, violet, and cyan accent systems.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 *   **HTML5** — Semantic markup, metadata indexing, SEO configuration
 *   **CSS3** — Custom tokens, keyframe animations, responsive grid frameworks
@@ -36,3 +38,8 @@ A premium, highly interactive **Developer Portfolio** built with a dark space-ne
 *   **Email**: giribalajichandrashekar@gmail.com
 *   **Phone**: +91 6364816118
 
+---
+
+## License 
+
+This project is licensed under Apache License version 2.0
