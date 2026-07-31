@@ -1,4 +1,6 @@
-_![image not found](./media/images/giribalajitextimg.jpg)
+<p align="center">
+  <img src="./media/images/giribalajitextimg.jpg" alt="image not found" />
+</p>
 
 # Giri Balaji C — Developer Portfolio
 
@@ -42,4 +44,4 @@ A premium, highly interactive **Developer Portfolio** built with a dark space-ne
 
 ## License 
 
-This project is licensed under Apache License version 2.0
+This project is licensed under Apache-2.0 license
