@@ -200,6 +200,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Close nav when clicking outside navbar
+  document.addEventListener('click', (e) => {
+    if (!navbar.contains(e.target) && navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+      const spans = hamburger.querySelectorAll('span');
+      spans[0].style.transform = 'none';
+      spans[1].style.opacity = '1';
+      spans[2].style.transform = 'none';
+    }
+  });
+
 
   // --- SCROLL ANIMATIONS (INTERSECTION OBSERVER) ---
   const observerOptions = {
